@@ -157,10 +157,10 @@
         <button onclick="showPage('use')">- Using the Passive Voice</button>
         <button onclick="showPage('how')">- How to Change Active</button>
         <button onclick="showPage('tenses')">- Tenses</button>
+        <button onclick="showPage('video')">- Video</button>
         <button onclick="showPage('exercise')">- Exercise</button>
         <button onclick="showPage('test')">- Test</button>
       </div>
-      <button onclick="showPage('contact')">📩 Contact</button>
     </aside>
 
     <div class="content" id="page-content">
@@ -200,7 +200,20 @@
       <p><b>Simple Future Tense:</b> <br/>Active: Subject + will + verb-1 + Object = Marry will help the boy <br/>Passive: Object + will + be + verb-3 + by + Subject = The boy will be helped by Marry</p>
       <p><b>Going to Future Tense:</b> <br/>Active: Subject + am/is/are + going to + verb-1 + Object = Marry is go ing to help the boy <br/>Passive: Object + am/is/are + going to be + verb-3 + by + Subject = The boy is going to be helped by Marry</p>
       <p><b>Future Perfect Tense:</b> <br/>Active: Subject + will have + verb-3 + Object = Marry will have helped the boy <br/>Passive: Object + will have been + verb-3 + by + Subject = The boy will have been helped by Marry</p>`,
-    exercise: `<h2>Exercise - Essay</h2>
+    
+       video: `<h2>Video Tenses</h2>
+  <p>Berikut adalah video pembelajaran tentang Active vs Passive Voice:</p>
+  <iframe width="100%" height="400"
+    src="https://www.youtube.com/embed/W1_IRU6zx9g"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>`,
+
+
+
+      exercise: `<h2>Exercise - Essay</h2>
   <div class="exercise">
     <label for="studentName"><b>Name:</b></label><br>
     <input type="text" id="studentName" placeholder="insert name..." style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:15px;">
@@ -432,24 +445,11 @@
 
 <p id="ans30"></p><br>
 
+  
         <br>
         <button class="submit" onclick="checkAnswers()">Check Answers</button>
-     </div>`,
-
-contact: `<h2>Contact</h2>
-    <p>For further information, please contact::</p>
-    <ul style="list-style:none; padding-left:0; line-height:1.8;">
-      <li>📧 Email: <a href="mailto:example@email.com">nurbayti426@gmail.com</a></li>
-      <li>📱 WhatsApp: <a href="https://wa.me/+6281383318135" target="_blank">+62 812-3456-7890</a></li>
-      <li>☎️ Phone: +6281383318135</li>
-      <li>📍 Address: Pekanbaru, Riau, Indonesia</li>
-    </ul>`
-    
+      </div>`
   };
-
-function sendMessage() {
-  alert("Your message has been sent! (simulasi, belum terkoneksi server)");
-}
 
   function showPage(page) {
     let content = document.getElementById("page-content");
